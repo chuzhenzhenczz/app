@@ -1,0 +1,55 @@
+
+<ion-view>
+    <ion-header-bar>
+        <div class="bar bar-header bar-assertive happy-bar">
+            <button class="button button-clear icon ion-happy-outline">
+            </button>
+            <button class="button button-clear button-positive ">
+                <p class="music_logo">开心一刻</p>
+            </button>
+
+            <button class="button button-clear  ion-plus-round music_logo_two">
+            </button>
+        </div>
+
+    </ion-header-bar>
+
+    <ion-content has-bouncing="false"  delegate-handle="mainScroll">
+        <div class="list card" ng-repeat="lists in obj.list">
+
+            <div class="item item-avatar" ng-click="myuser(lists.user.id)">
+                <img  onerror="javascript:this.src='img/zhaoliying.jpg'"  ng-src="{{lists.image}}">
+                <h2 class="happy-username">{{lists.user.login}}</h2>
+                <p>{{lists.user.role}}</p>
+            </div>
+
+            <div class="item item-body">
+
+                <p class="happy-content">
+                    {{lists.content}}
+                </p>
+                <li>
+                    <a href="#" class="subdued">1 好笑</a>
+                    <a href="#" class="subdued">{{lists.comments_count}} 评论</a>
+                </li>
+                <li class="happy-talk">
+                    <a href="#" class="ion-happy-outline happy"></a>
+                    <a href="#" class="ion-sad-outline cry"></a>
+                    <a href="#" class="ion-ios-chatbubble-outline  talk"></a>
+                </li>
+                <li class="happy-talk">
+                    <a ng-if="lists.hot_comment" class="talk-username" href="#">
+                        <img ng-src="img/talk.png" alt="">
+                        {{lists.hot_comment.user.login}}:</a>
+
+                    <a class="talk-content" href="#">{{lists.hot_comment.content}}</a>
+                </li>
+            </div>
+
+        </div>
+        <button class="up" ng-click="mainScrollToTop()">
+            <p class="ion-plane"></p>
+        </button>
+    </ion-content>
+
+</ion-view>

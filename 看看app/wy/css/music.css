@@ -1,0 +1,21 @@
+.music_logo{
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-family: "Wawati SC";
+}
+.item-avatar .music_logo_two{
+    max-width: 20px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+.user_img{
+    max-width: 20px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+
+
+}

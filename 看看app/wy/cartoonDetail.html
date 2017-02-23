@@ -1,0 +1,43 @@
+<ion-view>
+    <ion-nav-bar class="bar bar-header bar-assertive">
+
+        <ion-nav-back-button >
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="cartoon-box">
+            <div class="cartoon-title">
+                <img ng-src="{{mine.myContent.cover_image_url}}" alt="">
+                <div class="cartoon-title-cartoon">
+                    <h6 class="title">{{mine.myContent.title}}</h6>
+                    <p class="talk">
+                        <span class="pay">{{mine.pay}}万人关注</span>
+                        <span class="zan">
+                            <img style="width: 20px;height: 20px" ng-src="img/zan.png" alt="">{{mine.zan}}万<img style="width: 20px;height: 20px;margin-left: 20px;margin-right: 10px" ng-src="img/pingllun.png" alt="">{{mine.talk}}万
+                        </span>
+
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="list">
+
+            <a class="item item-thumbnail-left" ng-repeat="mulus in mine.muLu.slice().reverse()" ng-click="detail(mulus.id)">
+                <img ng-src="{{mulus.cover_image_url}}">
+                <div class="title-one">
+                <p>{{mulus.title}}</p>
+                </div>
+                <p class="one-talk">更新
+                    <span><img style="width: 20px;height: 20px" ng-src="img/zan.png" alt="">{{mulus.likes_count}}
+                    <img style="width: 20px;height: 20px;margin-left: 20px;margin-right: 10px" ng-src="img/pingllun.png" alt="">{{mulus.comments_count}}</span>
+                </p>
+            </a>
+        </div>
+
+
+    </ion-content>
+
+</ion-view>

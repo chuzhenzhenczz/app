@@ -1,0 +1,17 @@
+<ion-view title="{{mine.content.title}}">
+
+    <ion-nav-bar class="bar bar-header bar-assertive">
+        <ion-nav-back-button >
+           返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="cartoon-content"  ng-repeat="imgs in mine.img">
+
+            <img ng-src="{{imgs}}" alt="">
+        </div>
+
+        <div style="height: 49px;"></div>
+    </ion-content>
+
+</ion-view>

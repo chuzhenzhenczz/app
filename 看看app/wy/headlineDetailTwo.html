@@ -1,0 +1,25 @@
+
+<ion-view title="新闻频道">
+    <ion-nav-bar class="bar bar-header bar-dark">
+
+        <ion-nav-back-button >
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div>
+            <div class="swiper-container .container">
+                <div class="swiper-wrapper">
+                    <div ng-repeat="imgs in mine.imges" class="swiper-slide container_box">
+                        <img  ng-src="{{imgs.imgurl}}">
+                        <p style="height: 200px;">{{ imgs.note }}</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination pagination"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

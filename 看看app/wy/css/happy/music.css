@@ -1,0 +1,49 @@
+.happy{
+    font-size: 25px;
+    color: #c5c5c5;
+    margin-left: 15px;
+
+}
+.cry{
+    font-size: 25px;
+    margin-left: 20px;
+    color: #c5c5c5;
+
+}
+.happy-talk .talk{
+    font-size: 30px;
+    margin-left: 220px;
+    color: #c5c5c5;
+
+}
+
+.item .happy-content{
+   font-size: 17px;
+    line-height: 25px;
+    color: #2f2f2f;
+}
+.item .happy-username{
+    color: #707070;
+}
+.happy-talk .talk-username{
+
+    font-size: 14px;
+    color: #939393;
+    text-decoration: none;
+}
+.happy-talk .talk-username{
+
+    font-size: 14px;
+    color: #939393;
+    text-decoration: none;
+}
+.talk-username img{
+
+    width: 17px;
+    height: 17px;
+}
+.happy-talk .talk-content{
+    font-size: 14px;
+    color: #6c5137;
+    text-decoration: none;
+}

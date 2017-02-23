@@ -1,0 +1,17 @@
+.row .col {
+    width: 202px;
+    height: 200px;
+}
+
+.qb_user_content a{
+
+    text-decoration: none;
+    color: #939393;
+
+}
+.qb_user h2{
+    font-size: 25px;
+    font-family: "Wawati SC";
+    text-align: center;
+    color: #4d4d4d;
+}

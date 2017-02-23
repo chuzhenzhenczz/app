@@ -1,0 +1,31 @@
+
+<ion-view title="新闻频道">
+    <ion-nav-bar class="bar bar-header bar-assertive">
+
+        <ion-nav-back-button >
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="headerline_detail">
+
+            <div class="headerline_detail_title">
+                <p ng-bind-html="mine.title" class="title"></p>
+                <p ng-bind-html="mine.timeAndSource"></p>
+            </div>
+
+            <div class="headerline_detail_content">
+
+                <p ng-bind-html="mine.content">
+
+                </p>
+                <p class="talk">
+                    <a href="#" class="subdued">1 Like</a>
+                    <a href="#" class="subdued">评论</a>
+                </p>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>

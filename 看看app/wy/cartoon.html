@@ -1,0 +1,38 @@
+
+<ion-view>
+    <ion-header-bar>
+        <div class="bar bar-header bar-assertive happy-bar">
+            <button class="button button-clear icon ion-ios-bookmarks-outline">
+            </button>
+            <button class="button button-clear button-positive ">
+                <p class="music_logo">漫画大全</p>
+            </button>
+
+            <button class="button button-clear  ion-plus-round music_logo_two">
+            </button>
+        </div>
+        <ion-scroll direction="x" class="bar bar-subheader" style="background-color: #ffc58b;">
+            <div  ng-style="obj.myStyle">
+                <div class="button button-clear button-light" ng-repeat="button in obj.datalist" ng-click="obj.ajaxRequest(button.url)" ng-style="obj.buttonStyle">{{ button.name}}</div>
+            </div>
+        </ion-scroll>
+    </ion-header-bar>
+    <ion-content has-bouncing="false"  delegate-handle="mainScroll">
+        <div class="lll" style="height: 42px;">
+        </div>
+        <div style="margin-bottom: 1px" class="list" ng-repeat="lists in obj.list">
+            <a class="item item-thumbnail-left" ng-click="cartoonid(lists.id)" >
+                <img ng-src="{{lists.cover_image_url}}">
+                <h2>{{lists.title}}</h2>
+                <p>{{lists.user.nickname}}</p>
+                <p><img style="width: 20px;height: 20px" ng-src="img/zan.png" alt="">{{lists.comments_count}}<img style="width: 20px;height: 20px;margin-left: 20px;margin-right: 10px" ng-src="img/pingllun.png" alt="">{{lists.comments_count}}</p>
+                <p></p>
+            </a>
+        </div>
+
+        <button class="up" ng-click="mainScrollToTop()">
+            <p class="ion-plane"></p>
+        </button>
+    </ion-content>
+
+</ion-view>

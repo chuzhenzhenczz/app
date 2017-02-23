@@ -1,0 +1,61 @@
+
+<ion-view title="user">
+    <ion-nav-bar class="bar bar-header bar-assertive">
+
+        <ion-nav-back-button >
+            返回
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+
+        <div class="mine-box">
+            <div class="username">
+                <div class="username-box">
+                    <img class="img-vip" src="img/vip2.png" alt="">
+                    <img onerror="javascript:this.src='img/zhaoliying.jpg'"   class="img-user" ng-src="{{mine.myUser.image}}">
+
+                </div>
+            </div>
+        </div>
+        <div class="item item-avatar">
+            <img onerror="javascript:this.src='img/zhaoliying.jpg'"  ng-src="{{mine.myUser.image}}">
+            <h2>{{mine.myUser.login}}</h2>
+            <p>{{mine.myUser.age}} <img class="music_logo_two" src="img/vip1.png" alt=""></p>
+
+        </div>
+        <div class="row">
+
+            <div class="list card col">
+                <div class="qb_user">
+                    <h2 class=" ion-ribbon-b">开心指数</h2>
+                </div>
+                <div class="item item-body">
+                    <ul class="qb_user_content">
+                        <li><a href="">粉丝：{{mine.myUser.age}}</a></li>
+                        <li><a href="">关注：{{mine.myUser.bg}}</a></li>
+                        <li><a href="">糗事：{{mine.myUser.bg}}</a></li>
+                        <li><a href="">评论：{{mine.myUser.qb_age}}</a></li>
+                        <li><a href="">笑脸：{{mine.myUser.age}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list card col">
+
+                <div class="qb_user">
+                    <h2 class="ion-social-octocat energized">个人资料</h2>
+                </div>
+
+                <div class="item item-body">
+                    <ul class="qb_user_content">
+                        <li><a href="">婚姻：{{mine.myUser.emotion}}</a></li>
+                        <li><a href="">星座：{{mine.myUser.astrology}}</a></li>
+                        <li><a href="">故乡：{{mine.myUser.hometown}}</a></li>
+                        <li><a href="">职业：{{mine.myUser.job}}</a></li>
+                        <li><a href="">糗龄：{{mine.myUser.qb_age}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
